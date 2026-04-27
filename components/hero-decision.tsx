@@ -141,7 +141,7 @@ export function HeroDecision() {
             <a href="/book/advisory" className="btn-primary text-base">
               Build a Better Hiring System <span aria-hidden>→</span>
             </a>
-            <a href="#problem" className="btn-ghost text-base">
+            <a href="#problem" className="btn-primary text-base">
               See the Problem
             </a>
           </div>
