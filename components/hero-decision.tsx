@@ -112,9 +112,9 @@ export function HeroDecision() {
           filter: "blur(50px)",
         }}
       />
-      {/* Dark gradient overlays for text legibility */}
-      <div className="absolute inset-0 bg-gradient-to-r from-ot-obsidian/90 via-ot-obsidian/65 to-ot-obsidian/30" style={{ zIndex: 2 }} />
-      <div className="absolute inset-0 bg-gradient-to-t from-ot-obsidian via-transparent to-ot-obsidian/40" style={{ zIndex: 2 }} />
+      {/* Dark gradient overlays — light enough to let the skyline show */}
+      <div className="absolute inset-0" style={{ zIndex: 2, background: "linear-gradient(to right, rgba(7,7,18,0.75) 0%, rgba(7,7,18,0.45) 50%, rgba(7,7,18,0.15) 100%)" }} />
+      <div className="absolute inset-0" style={{ zIndex: 2, background: "linear-gradient(to top, rgba(7,7,18,0.85) 0%, transparent 40%, rgba(7,7,18,0.3) 100%)" }} />
 
       <div className="relative max-w-content mx-auto px-6 md:px-12 lg:px-20 pt-20 pb-24" style={{ zIndex: 3 }}>
         <div className="max-w-4xl">
