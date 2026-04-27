@@ -94,17 +94,29 @@ export function HeroDecision() {
   }, []);
 
   return (
-    <section className="relative hero-glow min-h-[90vh] flex items-center overflow-hidden">
+    <section className="relative min-h-[90vh] flex items-center overflow-hidden">
       {/* Dubai skyline background image */}
-      <div
-        className="absolute inset-0 z-[1] bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/dubai-hero.jpeg')" }}
+      <img
+        src="/dubai-hero.jpeg"
+        alt=""
+        className="absolute inset-0 w-full h-full object-cover object-center"
+        style={{ zIndex: 0 }}
       />
-      {/* Dark gradient overlay for text legibility */}
-      <div className="absolute inset-0 z-[2] bg-gradient-to-r from-ot-obsidian/90 via-ot-obsidian/65 to-ot-obsidian/30" />
-      <div className="absolute inset-0 z-[2] bg-gradient-to-t from-ot-obsidian via-transparent to-ot-obsidian/40" />
+      {/* Ambient glow */}
+      <div
+        className="absolute pointer-events-none"
+        style={{
+          inset: "-30%",
+          zIndex: 1,
+          background: "radial-gradient(40% 30% at 50% 15%, rgba(139,92,246,0.3), transparent 60%), radial-gradient(50% 40% at 80% 50%, rgba(34,211,238,0.12), transparent 65%), radial-gradient(40% 35% at 15% 60%, rgba(124,58,237,0.2), transparent 65%)",
+          filter: "blur(50px)",
+        }}
+      />
+      {/* Dark gradient overlays for text legibility */}
+      <div className="absolute inset-0 bg-gradient-to-r from-ot-obsidian/90 via-ot-obsidian/65 to-ot-obsidian/30" style={{ zIndex: 2 }} />
+      <div className="absolute inset-0 bg-gradient-to-t from-ot-obsidian via-transparent to-ot-obsidian/40" style={{ zIndex: 2 }} />
 
-      <div className="relative z-[5] max-w-content mx-auto px-6 md:px-12 lg:px-20 pt-20 pb-24">
+      <div className="relative max-w-content mx-auto px-6 md:px-12 lg:px-20 pt-20 pb-24" style={{ zIndex: 3 }}>
         <div className="max-w-4xl">
           <div className="flex items-center gap-3 mb-8">
             <span className="h-px w-10 bg-ot-violet/60" />
