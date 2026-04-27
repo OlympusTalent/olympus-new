@@ -97,14 +97,14 @@ export function HeroDecision() {
     <section className="relative hero-glow min-h-[90vh] flex items-center overflow-hidden">
       {/* Dubai skyline background image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 z-[1] bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/dubai-hero.jpeg')" }}
       />
       {/* Dark gradient overlay for text legibility */}
-      <div className="absolute inset-0 bg-gradient-to-r from-ot-obsidian/95 via-ot-obsidian/80 to-ot-obsidian/50" />
-      <div className="absolute inset-0 bg-gradient-to-t from-ot-obsidian via-transparent to-ot-obsidian/60" />
+      <div className="absolute inset-0 z-[2] bg-gradient-to-r from-ot-obsidian/90 via-ot-obsidian/65 to-ot-obsidian/30" />
+      <div className="absolute inset-0 z-[2] bg-gradient-to-t from-ot-obsidian via-transparent to-ot-obsidian/40" />
 
-      <div className="relative z-10 max-w-content mx-auto px-6 md:px-12 lg:px-20 pt-20 pb-24">
+      <div className="relative z-[5] max-w-content mx-auto px-6 md:px-12 lg:px-20 pt-20 pb-24">
         <div className="max-w-4xl">
           <div className="flex items-center gap-3 mb-8">
             <span className="h-px w-10 bg-ot-violet/60" />
