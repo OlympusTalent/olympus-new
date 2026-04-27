@@ -4,8 +4,8 @@ import { useEffect, useRef, useState } from "react";
 
 /* ── Hero stat definitions ─────────────────────────────────── */
 const HERO_STATS = [
-  { target: 67, prefix: "", suffix: "%", label: "Of hires fail within 18 months", highlight: false },
-  { target: 240, prefix: "£", suffix: "k", label: "Average cost of a mis-hire", highlight: false },
+  { target: 6, prefix: "", suffix: "M+", label: "Global candidate reach", highlight: true },
+  { target: 10, prefix: "", suffix: "+ yrs", label: "Zero rebates issued", highlight: true },
   { target: 14, prefix: "", suffix: " wks", label: "Industry avg time-to-hire", highlight: false },
   { target: 14, prefix: "", suffix: " days", label: "Olympus average", highlight: true },
 ];
@@ -133,7 +133,7 @@ export function HeroDecision() {
             Decision infrastructure for hiring across Payroll, HR, IT &amp;
             Finance.{" "}
             <span className="text-ot-bone font-normal">
-              140+ countries. 14-day hires. 98% retention.
+              6M+ candidate reach. 140+ countries. 14-day hires. 98% retention.
             </span>
           </p>
 
