@@ -57,7 +57,7 @@ function HeroStat({
       }}
     >
       <div
-        className={`text-3xl font-bold tabular-nums ${
+        className={`text-4xl md:text-5xl font-black tabular-nums ${
           stat.highlight ? "text-ot-signal" : "gradient-text"
         }`}
       >
@@ -65,7 +65,7 @@ function HeroStat({
         {count}
         {stat.suffix}
       </div>
-      <div className="mt-2 text-xs text-ot-smoke font-mono uppercase tracking-wider">
+      <div className="mt-3 text-sm font-semibold text-ot-bone">
         {stat.label}
       </div>
     </div>
