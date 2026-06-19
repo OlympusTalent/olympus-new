@@ -26,6 +26,8 @@ const config: Config = {
           crimson: "#EF4444",
           warn: "#F59E0B",
           magenta: "#EC4899",
+          azure: "#3B82F6",
+          teal: "#14B8A6",
         },
       },
       fontFamily: {
