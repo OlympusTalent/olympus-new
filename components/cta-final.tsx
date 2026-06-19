@@ -34,7 +34,7 @@ export function CtaFinal() {
           </a>
         </div>
         <p className="mt-6 text-xs text-ot-smoke font-mono tracking-wider uppercase">
-          Dubai · Manchester · Paris · Milan · Boston · New York · Houston · Singapore · Mumbai · São Paulo · Abu Dhabi · Doha
+          Dubai · Manchester · Paris · Milan · Boston · New York · Houston · Singapore · Tokyo · Mumbai · São Paulo · Abu Dhabi · Doha
         </p>
         <div className="mt-20 flex items-center justify-center gap-3 sm:gap-4 flex-wrap max-w-2xl mx-auto">
           {LAYER_GLYPHS.map((g) => (
