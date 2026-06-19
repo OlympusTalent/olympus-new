@@ -44,6 +44,33 @@ const OS_LAYERS = [
     delay: "2.4s",
     body: "The hire is the beginning, not the end. 90-day integration support, culture alignment monitoring, 98% 12-month retention.",
   },
+  {
+    kanji: "機",
+    name: "Kikai",
+    principle: "Machine",
+    color: "border-ot-azure/50",
+    labelColor: "text-ot-azure",
+    delay: "3.0s",
+    body: "The machine is the new environment. Algorithms, platforms and data architectures shape behaviour before anyone decides anything. The Kikai Audit™ maps the invisible systems running your organisation.",
+  },
+  {
+    kanji: "信",
+    name: "Shinrai",
+    principle: "Trust",
+    color: "border-ot-teal/50",
+    labelColor: "text-ot-teal",
+    delay: "3.6s",
+    body: "Every system eventually becomes a trust problem. Psychological safety, leadership credibility and reputation networks decide whether truth reaches the top. The Shinrai Index™ measures how much reaches it unaltered.",
+  },
+  {
+    kanji: "改",
+    name: "Kaizen",
+    principle: "Adaptation",
+    color: "border-ot-purple/50",
+    labelColor: "text-ot-purple",
+    delay: "4.2s",
+    body: "The environment always changes faster than the organisation. Most systems stop learning the moment they succeed. The Kaizen Assessment™ asks what you learned in the last 90 days that changed how you operate.",
+  },
 ];
 
 export function OlympusOS() {
@@ -56,13 +83,15 @@ export function OlympusOS() {
             The Olympus Talent OS™
           </h2>
           <p className="mt-6 text-xl text-ot-ash leading-relaxed">
-            Five interconnected layers. One operating system for every hiring
-            decision your organisation makes. Each layer feeds the next. Nothing
-            is siloed. Nothing is reactive.
+            Eight interconnected layers. One operating system for every hiring
+            decision your organisation makes — from clarity of need through to
+            the machines, trust networks and learning systems that decide
+            whether it holds. Each layer feeds the next. Nothing is siloed.
+            Nothing is reactive.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {OS_LAYERS.map((layer) => (
             <div
               key={layer.name}
