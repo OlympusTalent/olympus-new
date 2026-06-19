@@ -6,7 +6,7 @@ const NAV = [
   { label: "Live Roles", href: "/jobs" },
   { label: "Intelligence", href: "/#intelligence" },
   { label: "Pricing", href: "/pricing" },
-  { label: "Doctrine", href: "/#doctrine" },
+  { label: "Doctrine", href: "/doctrine" },
 ];
 
 export function SiteNav() {

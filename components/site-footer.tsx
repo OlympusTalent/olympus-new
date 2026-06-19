@@ -84,7 +84,7 @@ export function SiteFooter() {
             <p className="eyebrow mb-4">Company</p>
             <ul className="space-y-2 text-sm text-ot-ash">
               <li>
-                <Link href="#" className="hover:text-ot-bone transition-colors">
+                <Link href="/doctrine" className="hover:text-ot-bone transition-colors">
                   The Doctrine
                 </Link>
               </li>
