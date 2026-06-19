@@ -339,7 +339,8 @@ export default function DoctrinePage() {
                     href={`#layer-${l.roman}`}
                     className={`glass p-3 text-center data-card group`}
                   >
-                    <div className={`font-mono text-[11px] ${l.text}`}>{l.roman}</div>
+                    <div className={`text-2xl leading-none ${l.text}`}>{l.kanji}</div>
+                    <div className={`font-mono text-[11px] mt-2 ${l.text}`}>{l.roman}</div>
                     <div className="text-sm font-semibold mt-1">{l.name}</div>
                     <div className="text-[10px] text-ot-smoke font-mono uppercase tracking-wider mt-0.5">
                       {l.title}
