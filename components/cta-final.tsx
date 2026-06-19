@@ -25,7 +25,16 @@ export function CtaFinal() {
         <p className="mt-6 text-xs text-ot-smoke font-mono tracking-wider uppercase">
           Dubai · Manchester · Paris · Milan · Boston · New York · Houston · Singapore · Mumbai · São Paulo · Abu Dhabi · Doha
         </p>
-        <div className="meander mt-16 max-w-xl mx-auto opacity-60" />
+        <div className="mt-16 max-w-md mx-auto flex items-center justify-center gap-5">
+          <span className="h-px flex-1 bg-gradient-to-r from-transparent to-ot-steel" />
+          <span lang="ja" className="text-xl tracking-[0.3em] text-ot-smoke/70">
+            萬川集海
+          </span>
+          <span className="h-px flex-1 bg-gradient-to-l from-transparent to-ot-steel" />
+        </div>
+        <p className="mt-3 text-[10px] font-mono uppercase tracking-[0.3em] text-ot-iron">
+          Bansenshūkai — ten thousand rivers, one sea
+        </p>
       </div>
     </section>
   );
