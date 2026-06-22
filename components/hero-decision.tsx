@@ -95,9 +95,9 @@ export function HeroDecision() {
 
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-      {/* Dark mountain peaks — Olympus summit */}
+      {/* Aerial Shibuya crossing — Tokyo at night */}
       <img
-        src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1920&h=1080&fit=crop&q=80"
+        src="https://images.unsplash.com/photo-1573456373835-579c408de263?w=1920&h=1080&fit=crop&q=80"
         alt=""
         className="absolute inset-0 w-full h-full object-cover object-center"
         style={{ zIndex: 0, filter: "brightness(0.5)" }}
