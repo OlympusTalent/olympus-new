@@ -95,9 +95,9 @@ export function HeroDecision() {
 
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-      {/* Dark bamboo forest — Satvik */}
+      {/* Arashiyama bamboo grove — Fynn Geerdsen */}
       <img
-        src="https://images.unsplash.com/photo-1775955849607-3dabd4750268?w=1920&h=1080&fit=crop&q=80"
+        src="https://images.unsplash.com/photo-1698618988744-737573cb6a7a?w=1920&h=1080&fit=crop&q=80"
         alt=""
         className="absolute inset-0 w-full h-full object-cover object-center"
         style={{ zIndex: 0, filter: "brightness(0.5)" }}
