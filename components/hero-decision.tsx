@@ -1,4 +1,4 @@
-—"use client";
+"use client";
 
 import { useEffect, useRef, useState } from "react";
 
@@ -100,7 +100,7 @@ export function HeroDecision() {
         src="https://images.unsplash.com/photo-1698618988744-737573cb6a7a?w=1920&h=1080&fit=crop&q=80"
         alt=""
         className="absolute inset-0 w-full h-full object-cover object-center"
-        style={{ zIndex: 0, filter: "brightness(0.5)" }}
+        style={{ zIndex: 0, filter: "brightness(0.55)" }}
       />
       {/* Ambient glow */}
       <div
