@@ -95,12 +95,12 @@ export function HeroDecision() {
 
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-      {/* Dubai skyline background image */}
+      {/* Aerial dark cityscape — god's-eye view */}
       <img
-        src="/dubai-hero.jpeg"
+        src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&h=1080&fit=crop&q=80"
         alt=""
         className="absolute inset-0 w-full h-full object-cover object-center"
-        style={{ zIndex: 0 }}
+        style={{ zIndex: 0, filter: "brightness(0.5)" }}
       />
       {/* Ambient glow */}
       <div
@@ -123,9 +123,8 @@ export function HeroDecision() {
             <span className="eyebrow text-ot-violet">Decision Infrastructure</span>
           </div>
 
-          <h1 className="font-sans font-black leading-[.95] tracking-[-0.035em] text-[clamp(2.8rem,6.5vw,5.5rem)]">
-            Most companies don&apos;t have a hiring problem.
-            <br />
+          <h1 className="font-sans font-black leading-[.88] tracking-[-0.035em] text-[clamp(2.8rem,6.5vw,5.5rem)]">
+            Most companies don&apos;t have a hiring problem.{" "}
             <span className="gradient-text">They have a decision problem.</span>
           </h1>
 
