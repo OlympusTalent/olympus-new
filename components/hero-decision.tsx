@@ -1,4 +1,4 @@
-"use client";
+—"use client";
 
 import { useEffect, useRef, useState } from "react";
 
@@ -95,9 +95,9 @@ export function HeroDecision() {
 
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-      {/* Karesansui close-up — dark stones in raked white gravel */}
+      {/* Mt. Fuji at night — Clay Banks */}
       <img
-        src="https://images.unsplash.com/photo-1707323747791-407f6fc030a9?w=1920&h=1080&fit=crop&q=80"
+        src="https://images.unsplash.com/photo-1509023464722-18d996393ca8?w=1920&h=1080&fit=crop&q=80"
         alt=""
         className="absolute inset-0 w-full h-full object-cover object-center"
         style={{ zIndex: 0, filter: "brightness(0.5)" }}
