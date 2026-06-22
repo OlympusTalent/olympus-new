@@ -95,9 +95,9 @@ export function HeroDecision() {
 
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-      {/* Meguro River cherry blossom tunnel — Sora Sagano */}
+      {/* Meguro River cherry blossoms — mos design */}
       <img
-        src="https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=1920&h=1080&fit=crop&q=80"
+        src="https://images.unsplash.com/photo-1679991811922-6470a50deca4?w=1920&h=1080&fit=crop&q=80"
         alt=""
         className="absolute inset-0 w-full h-full object-cover object-center"
         style={{ zIndex: 0, filter: "brightness(0.55)" }}
