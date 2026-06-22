@@ -95,9 +95,9 @@ export function HeroDecision() {
 
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-      {/* Mt. Fuji at night — Clay Banks */}
+      {/* Dark bamboo forest — Satvik */}
       <img
-        src="https://images.unsplash.com/photo-1509023464722-18d996393ca8?w=1920&h=1080&fit=crop&q=80"
+        src="https://images.unsplash.com/photo-1775955849607-3dabd4750268?w=1920&h=1080&fit=crop&q=80"
         alt=""
         className="absolute inset-0 w-full h-full object-cover object-center"
         style={{ zIndex: 0, filter: "brightness(0.5)" }}
