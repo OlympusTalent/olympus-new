@@ -163,7 +163,7 @@ export function HeroDecision() {
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
             <a href="/book/advisory" className="btn-primary text-base">
-              Build a Better Hiring System <span aria-hidden>â</span>
+              Build a Better Hiring System <span aria-hidden>→</span>
             </a>
             <a href="#problem" className="btn-primary text-base">
               See the Problem
@@ -201,7 +201,7 @@ export function HeroDecision() {
             className="text-ot-smoke/20 text-base tracking-widest"
             style={{ writingMode: "vertical-rl" }}
           >
-            ä¸å·éæµ·
+            万川集海
           </span>
           <span className="h-6 w-px bg-ot-violet/20" />
           <span
