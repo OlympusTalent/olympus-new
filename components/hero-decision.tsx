@@ -194,6 +194,28 @@ export function HeroDecision() {
           ))}
         </div>
       </div>
+      {/* Bansenshukai doctrine mark — bottom left */}
+      <div
+        className="absolute bottom-8 left-6 md:left-12 hidden md:flex items-end gap-3"
+        style={{ zIndex: 3 }}
+      >
+        <div className="flex flex-col items-center gap-2">
+          <span
+            className="text-ot-smoke/20 text-base tracking-widest"
+            style={{ writingMode: "vertical-rl" }}
+          >
+            万川集海
+          </span>
+          <span className="h-6 w-px bg-ot-violet/20" />
+          <span
+            className="text-ot-smoke/25 font-mono text-[9px] tracking-[0.25em] uppercase"
+            style={{ writingMode: "vertical-rl" }}
+          >
+            Built on Bansenshukai
+          </span>
+        </div>
+      </div>
+
     </section>
   );
 }
