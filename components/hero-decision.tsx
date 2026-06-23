@@ -13,12 +13,10 @@ const HERO_STATS = [
 /* ── Count-up hook ─────────────────────────────────────────── */
 function useCountUp(target: number, isVisible: boolean, duration = 1600) {
   const [value, setValue] = useState(0);
-
   useEffect(() => {
     if (!isVisible) return;
     let start: number | null = null;
     let raf: number;
-
     const step = (ts: number) => {
       if (start === null) start = ts;
       const elapsed = ts - start;
@@ -27,11 +25,9 @@ function useCountUp(target: number, isVisible: boolean, duration = 1600) {
       setValue(Math.round(eased * target));
       if (progress < 1) raf = requestAnimationFrame(step);
     };
-
     raf = requestAnimationFrame(step);
     return () => cancelAnimationFrame(raf);
   }, [isVisible, target, duration]);
-
   return value;
 }
 
@@ -46,7 +42,6 @@ function HeroStat({
   isVisible: boolean;
 }) {
   const count = useCountUp(stat.target, isVisible, 1400);
-
   return (
     <div
       className="glass p-5"
@@ -76,7 +71,6 @@ function HeroStat({
 export function HeroDecision() {
   const stripRef = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
-
   useEffect(() => {
     const el = stripRef.current;
     if (!el) return;
@@ -94,38 +88,73 @@ export function HeroDecision() {
   }, []);
 
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-      {/* Dense bamboo stalks — Clement Souchet */}
-      <img
-        src="https://images.unsplash.com/photo-1586061968253-7bf5724aab7b?w=1920&h=1080&fit=crop&q=80"
-        alt=""
-        className="absolute inset-0 w-full h-full object-cover object-center"
-        style={{ zIndex: 0, filter: "brightness(0.55)" }}
-      />
+    <section
+      className="relative min-h-[90vh] flex items-center overflow-hidden"
+      style={{
+        background:
+          "linear-gradient(135deg, #070712 0%, #0a0a1a 40%, #0d0d20 70%, #070712 100%)",
+      }}
+    >
+      {/* Bansenshukai manuscript — left side, shadowed */}
+      <div
+        className="absolute left-0 top-0 h-full pointer-events-none select-none"
+        style={{ width: "clamp(280px, 35vw, 520px)", zIndex: 1 }}
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Bansenshukai-v8-diagram.jpg"
+          alt=""
+          className="h-full w-full object-cover object-center"
+          style={{
+            opacity: 0.07,
+            filter: "grayscale(100%) contrast(1.2)",
+            maskImage:
+              "linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 60%, transparent 100%)",
+            WebkitMaskImage:
+              "linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 60%, transparent 100%)",
+          }}
+        />
+      </div>
+
       {/* Ambient glow */}
       <div
         className="absolute pointer-events-none"
         style={{
           inset: "-30%",
           zIndex: 1,
-          background: "radial-gradient(40% 30% at 50% 15%, rgba(139,92,246,0.3), transparent 60%), radial-gradient(50% 40% at 80% 50%, rgba(34,211,238,0.12), transparent 65%), radial-gradient(40% 35% at 15% 60%, rgba(124,58,237,0.2), transparent 65%)",
+          background:
+            "radial-gradient(40% 30% at 50% 15%, rgba(139,92,246,0.15), transparent 60%), radial-gradient(50% 40% at 80% 50%, rgba(34,211,238,0.08), transparent 65%), radial-gradient(40% 35% at 15% 60%, rgba(124,58,237,0.12), transparent 65%)",
           filter: "blur(50px)",
         }}
       />
-      {/* Dark gradient overlays — light enough to let the skyline show */}
-      <div className="absolute inset-0" style={{ zIndex: 2, background: "linear-gradient(to right, rgba(7,7,18,0.75) 0%, rgba(7,7,18,0.45) 50%, rgba(7,7,18,0.15) 100%)" }} />
-      <div className="absolute inset-0" style={{ zIndex: 2, background: "linear-gradient(to top, rgba(7,7,18,0.85) 0%, transparent 40%, rgba(7,7,18,0.3) 100%)" }} />
 
-      <div className="relative max-w-content mx-auto px-6 md:px-12 lg:px-20 pt-20 pb-24" style={{ zIndex: 3 }}>
-        <div className="max-w-4xl">
+      {/* Black gloss reflection */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          zIndex: 2,
+          background:
+            "linear-gradient(180deg, transparent 0%, rgba(7,7,18,0.4) 50%, rgba(7,7,18,0.9) 100%)",
+        }}
+      />
+
+      <div
+        className="relative max-w-content mx-auto px-6 md:px-12 lg:px-20 pt-24 pb-24"
+        style={{ zIndex: 3 }}
+      >
+        <div className="max-w-3xl">
           <div className="flex items-center gap-3 mb-8">
             <span className="h-px w-10 bg-ot-violet/60" />
-            <span className="eyebrow text-ot-violet">Decision Infrastructure</span>
+            <span className="eyebrow text-ot-violet">
+              Decision Infrastructure
+            </span>
           </div>
 
-          <h1 className="font-sans font-black leading-[.88] tracking-[-0.035em] text-[clamp(2.8rem,6.5vw,5.5rem)]">
-            Most companies don&apos;t have a hiring problem.{" "}
-            <span className="gradient-text">They have a decision problem.</span>
+          <h1 className="font-sans font-black leading-[1.05] tracking-[-0.035em] text-[clamp(2.4rem,5.5vw,4.8rem)]">
+            Most companies don&apos;t have a hiring problem.
+            <br />
+            <span className="gradient-text">
+              They have a decision problem.
+            </span>
           </h1>
 
           <p className="mt-8 text-xl md:text-2xl text-ot-ash leading-relaxed max-w-2xl font-light">
