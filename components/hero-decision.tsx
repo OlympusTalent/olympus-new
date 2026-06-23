@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
-/* ── Hero stat definitions ─────────────────────────────────── */
+/* -- Hero stat definitions ---------------------------------------- */
 const HERO_STATS = [
   { target: 6, prefix: "", suffix: "M+", label: "Global candidate reach", highlight: true },
   { target: 10, prefix: "", suffix: "+ yrs", label: "Zero rebates issued", highlight: true },
@@ -10,13 +10,15 @@ const HERO_STATS = [
   { target: 14, prefix: "", suffix: " days", label: "Olympus average", highlight: true },
 ];
 
-/* ── Count-up hook ─────────────────────────────────────────── */
+/* -- Count-up hook ------------------------------------------------ */
 function useCountUp(target: number, isVisible: boolean, duration = 1600) {
   const [value, setValue] = useState(0);
+
   useEffect(() => {
     if (!isVisible) return;
     let start: number | null = null;
     let raf: number;
+
     const step = (ts: number) => {
       if (start === null) start = ts;
       const elapsed = ts - start;
@@ -25,13 +27,15 @@ function useCountUp(target: number, isVisible: boolean, duration = 1600) {
       setValue(Math.round(eased * target));
       if (progress < 1) raf = requestAnimationFrame(step);
     };
+
     raf = requestAnimationFrame(step);
     return () => cancelAnimationFrame(raf);
   }, [isVisible, target, duration]);
+
   return value;
 }
 
-/* ── Single animated stat card ─────────────────────────────── */
+/* -- Single animated stat card ------------------------------------ */
 function HeroStat({
   stat,
   index,
@@ -42,6 +46,7 @@ function HeroStat({
   isVisible: boolean;
 }) {
   const count = useCountUp(stat.target, isVisible, 1400);
+
   return (
     <div
       className="glass p-5"
@@ -67,10 +72,11 @@ function HeroStat({
   );
 }
 
-/* ── Hero section ──────────────────────────────────────────── */
+/* -- Hero section ------------------------------------------------- */
 export function HeroDecision() {
   const stripRef = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
+
   useEffect(() => {
     const el = stripRef.current;
     if (!el) return;
@@ -95,7 +101,7 @@ export function HeroDecision() {
           "linear-gradient(135deg, #070712 0%, #0a0a1a 40%, #0d0d20 70%, #070712 100%)",
       }}
     >
-      {/* Bansenshukai manuscript — left side, shadowed */}
+      {/* Bansenshukai manuscript -- left side, shadowed */}
       <div
         className="absolute left-0 top-0 h-full pointer-events-none select-none"
         style={{ width: "clamp(280px, 35vw, 520px)", zIndex: 1 }}
@@ -120,28 +126,18 @@ export function HeroDecision() {
         className="absolute pointer-events-none"
         style={{
           inset: "-30%",
-          zIndex: 1,
+          zIndex: 2,
           background:
-            "radial-gradient(40% 30% at 50% 15%, rgba(139,92,246,0.15), transparent 60%), radial-gradient(50% 40% at 80% 50%, rgba(34,211,238,0.08), transparent 65%), radial-gradient(40% 35% at 15% 60%, rgba(124,58,237,0.12), transparent 65%)",
+            "radial-gradient(40% 30% at 50% 15%, rgba(139,92,246,0.3), transparent 60%), radial-gradient(50% 40% at 80% 50%, rgba(34,211,238,0.12), transparent 65%), radial-gradient(40% 35% at 15% 60%, rgba(124,58,237,0.2), transparent 65%)",
           filter: "blur(50px)",
         }}
       />
 
-      {/* Black gloss reflection */}
       <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          zIndex: 2,
-          background:
-            "linear-gradient(180deg, transparent 0%, rgba(7,7,18,0.4) 50%, rgba(7,7,18,0.9) 100%)",
-        }}
-      />
-
-      <div
-        className="relative max-w-content mx-auto px-6 md:px-12 lg:px-20 pt-24 pb-24"
+        className="relative max-w-content mx-auto px-6 md:px-12 lg:px-20 pt-20 pb-24"
         style={{ zIndex: 3 }}
       >
-        <div className="max-w-3xl">
+        <div className="max-w-4xl">
           <div className="flex items-center gap-3 mb-8">
             <span className="h-px w-10 bg-ot-violet/60" />
             <span className="eyebrow text-ot-violet">
@@ -167,7 +163,7 @@ export function HeroDecision() {
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
             <a href="/book/advisory" className="btn-primary text-base">
-              Build a Better Hiring System <span aria-hidden>→</span>
+              Build a Better Hiring System <span aria-hidden>â</span>
             </a>
             <a href="#problem" className="btn-primary text-base">
               See the Problem
@@ -179,7 +175,7 @@ export function HeroDecision() {
           </p>
         </div>
 
-        {/* Data strip — animated count-up */}
+        {/* Data strip -- animated count-up */}
         <div
           ref={stripRef}
           className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4"
@@ -194,7 +190,8 @@ export function HeroDecision() {
           ))}
         </div>
       </div>
-      {/* Bansenshukai doctrine mark — bottom left */}
+
+      {/* Bansenshukai doctrine mark -- bottom left */}
       <div
         className="absolute bottom-8 left-6 md:left-12 hidden md:flex items-end gap-3"
         style={{ zIndex: 3 }}
@@ -204,7 +201,7 @@ export function HeroDecision() {
             className="text-ot-smoke/20 text-base tracking-widest"
             style={{ writingMode: "vertical-rl" }}
           >
-            万川集海
+            ä¸å·éæµ·
           </span>
           <span className="h-6 w-px bg-ot-violet/20" />
           <span
@@ -215,7 +212,6 @@ export function HeroDecision() {
           </span>
         </div>
       </div>
-
     </section>
   );
 }
