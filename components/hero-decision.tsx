@@ -198,10 +198,10 @@ export function HeroDecision() {
       >
         <div className="flex flex-col items-center gap-2">
           <span
-            className="text-ot-smoke/20 text-base tracking-widest"
+            className="text-ot-smoke/20 text-lg tracking-[0.35em]"
             style={{ writingMode: "vertical-rl" }}
           >
-            万川集海
+            精天地用忍機信改
           </span>
           <span className="h-6 w-px bg-ot-violet/20" />
           <span
