@@ -10,6 +10,13 @@ import { ProofSection } from "@/components/proof-section";
 import { CtaFinal } from "@/components/cta-final";
 import { StickyCTABar } from "@/components/sticky-cta-bar";
 import { SiteFooter } from "@/components/site-footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function HomePage() {
   return (
