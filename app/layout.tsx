@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   title: "Olympus Talent — Decision Infrastructure for Hiring Under Pressure",
   description:
     "Most companies don't have a hiring problem. They have a decision problem. Olympus Talent is decision infrastructure for hiring across Payroll, HR, IT & Finance. 140+ countries. 2-week hires. 98% retention.",
-  metadataBase: new URL("https://olympus-talent.com"),
+  metadataBase: new URL("https://www.olympus-talent.com"),
   openGraph: {
     title: "Olympus Talent — Decision Infrastructure for Hiring Under Pressure",
     description:
