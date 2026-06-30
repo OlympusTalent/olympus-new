@@ -89,17 +89,17 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li>
-                <Link href="/#intelligence" className="hover:text-ot-bone transition-colors">
-                  Knowledge Hub
+                <Link href="/insights" className="hover:text-ot-bone transition-colors">
+                  Insights
                 </Link>
               </li>
               <li>
-                <Link href="/#os" className="hover:text-ot-bone transition-colors">
+                <Link href="/about" className="hover:text-ot-bone transition-colors">
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/book/advisory" className="hover:text-ot-bone transition-colors">
+                <Link href="/contact" className="hover:text-ot-bone transition-colors">
                   Contact
                 </Link>
               </li>
