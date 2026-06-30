@@ -6,18 +6,24 @@ import { useEffect, useRef, useState } from "react";
 const HERO_STATS = [
   { target: 6, prefix: "", suffix: "M+", label: "Global candidate reach", highlight: true },
   { target: 10, prefix: "", suffix: "+ yrs", label: "Zero rebates issued", highlight: true },
-  { target: 14, prefix: "", suffix: " wks", label: "Industry avg time-to-hire", highlight: false },
+  { target: 14, prefix: "", suffix: " wks", label: "Industry avg time-to-hire", highlight: true },
   { target: 14, prefix: "", suffix: " days", label: "Olympus average", highlight: true },
 ];
 
 /* -- Count-up hook ------------------------------------------------ */
 function useCountUp(target: number, isVisible: boolean, duration = 1600) {
-  const [value, setValue] = useState(0);
+  // Initialise to the real target so server-rendered HTML and no-JS / crawler
+  // views show the actual number, not 0. The count-up animation still runs once
+  // on first reveal in the browser.
+  const [value, setValue] = useState(target);
+  const hasAnimated = useRef(false);
 
   useEffect(() => {
-    if (!isVisible) return;
+    if (!isVisible || hasAnimated.current) return;
+    hasAnimated.current = true;
     let start: number | null = null;
     let raf: number;
+    setValue(0);
 
     const step = (ts: number) => {
       if (start === null) start = ts;
@@ -159,6 +165,12 @@ export function HeroDecision() {
             <span className="text-ot-bone font-normal">
               6M+ candidate reach. 140+ countries. 14-day hires. 98% retention.
             </span>
+          </p>
+
+          <p className="mt-5 text-base md:text-lg text-ot-smoke leading-relaxed max-w-2xl">
+            In plain terms: we source, place and retain senior Payroll, HR, IT and
+            Finance leaders in 140+ countries — and build the system that makes
+            those hires hold.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4">

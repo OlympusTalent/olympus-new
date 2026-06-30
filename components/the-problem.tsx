@@ -55,12 +55,18 @@ const PROBLEMS = [
 
 /* ── animated counter hook ─────────────────────────────────── */
 function useCountUp(target: number, isVisible: boolean, duration = 1600) {
-  const [value, setValue] = useState(0);
+  // Initialise to the real target so server-rendered HTML and no-JS / crawler
+  // views show the actual number, not 0. The count-up animation still runs once
+  // on first reveal in the browser.
+  const [value, setValue] = useState(target);
+  const hasAnimated = useRef(false);
 
   useEffect(() => {
-    if (!isVisible) return;
+    if (!isVisible || hasAnimated.current) return;
+    hasAnimated.current = true;
     let start: number | null = null;
     let raf: number;
+    setValue(0);
 
     const step = (ts: number) => {
       if (start === null) start = ts;

@@ -58,22 +58,22 @@ export function SiteFooter() {
             <p className="eyebrow mb-4">Hiring Infrastructure</p>
             <ul className="space-y-2 text-sm text-ot-ash">
               <li>
-                <Link href="#" className="hover:text-ot-bone transition-colors">
+                <Link href="/payroll" className="hover:text-ot-bone transition-colors">
                   Global Payroll
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-ot-bone transition-colors">
+                <Link href="/hr" className="hover:text-ot-bone transition-colors">
                   HR Leadership
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-ot-bone transition-colors">
+                <Link href="/it-engineering" className="hover:text-ot-bone transition-colors">
                   IT &amp; Engineering
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-ot-bone transition-colors">
+                <Link href="/finance" className="hover:text-ot-bone transition-colors">
                   Finance &amp; Control
                 </Link>
               </li>
@@ -89,17 +89,17 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-ot-bone transition-colors">
+                <Link href="/#intelligence" className="hover:text-ot-bone transition-colors">
                   Knowledge Hub
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-ot-bone transition-colors">
+                <Link href="/#os" className="hover:text-ot-bone transition-colors">
                   About
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-ot-bone transition-colors">
+                <Link href="/book/advisory" className="hover:text-ot-bone transition-colors">
                   Contact
                 </Link>
               </li>
