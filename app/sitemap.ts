@@ -15,6 +15,9 @@ const ROUTES = [
   "/it-engineering",
   "/finance",
   "/hireiq",
+  "/about",
+  "/contact",
+  "/insights",
   "/book/advisory",
 ];
 
