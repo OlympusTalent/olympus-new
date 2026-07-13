@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { AwardBadge } from "@/components/award-badge";
 
 /* -- Hero stat definitions ---------------------------------------- */
 const HERO_STATS = [
@@ -144,6 +143,8 @@ export function HeroDecision() {
         className="relative max-w-content mx-auto px-6 md:px-12 lg:px-20 pt-20 pb-24"
         style={{ zIndex: 3 }}
       >
+        <div className="xl:flex xl:items-center xl:gap-14">
+        <div className="xl:flex-1 xl:min-w-0">
         <div className="max-w-4xl">
           <div className="flex items-center gap-3 mb-8">
             <span className="h-px w-10 bg-ot-violet/60" />
@@ -186,11 +187,6 @@ export function HeroDecision() {
           <p className="mt-6 text-xs text-ot-smoke font-mono tracking-wider uppercase">
             This is not a sales call. It&apos;s a diagnostic.
           </p>
-
-          {/* Award seal -- Global 100 2026 */}
-          <div className="mt-10">
-            <AwardBadge size={84} />
-          </div>
         </div>
 
         {/* Data strip -- animated count-up */}
@@ -207,6 +203,38 @@ export function HeroDecision() {
             />
           ))}
         </div>
+        </div>
+        {/* end left column */}
+
+        {/* Award seal -- Global 100 2026, feature size beside the headline */}
+        <div className="hidden xl:flex xl:shrink-0 flex-col items-center xl:w-[420px]">
+          <div className="relative">
+            <div
+              aria-hidden
+              className="absolute rounded-full"
+              style={{
+                inset: "-16%",
+                background:
+                  "radial-gradient(circle, rgba(201,168,76,0.24), transparent 70%)",
+                filter: "blur(44px)",
+              }}
+            />
+            <img
+              src="/global-100-2026-winner.svg"
+              alt="Global 100 2026 Winner — Best Staffing &amp; Recruiting Business of the Year, United Arab Emirates"
+              className="relative w-[320px] 2xl:w-[380px] h-auto"
+              style={{ filter: "drop-shadow(0 24px 55px rgba(0,0,0,0.55))" }}
+            />
+          </div>
+          <p className="mt-7 max-w-[22rem] text-center text-lg font-semibold text-ot-bone leading-snug">
+            Best Staffing &amp; Recruiting Business of the Year — 2026
+          </p>
+          <p className="mt-2 text-[11px] font-mono tracking-[0.18em] uppercase text-ot-smoke">
+            Global 100 · United Arab Emirates
+          </p>
+        </div>
+        </div>
+        {/* end hero flex */}
       </div>
 
       {/* Bansenshukai doctrine mark -- bottom left */}
