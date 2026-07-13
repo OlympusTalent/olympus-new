@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AwardBadge } from "@/components/award-badge";
 
 export function SiteFooter() {
   return (
@@ -26,6 +27,11 @@ export function SiteFooter() {
               Not CV brokers. The operating system that turns hiring from a
               liability into a competitive advantage.
             </p>
+
+            {/* Award seal -- Global 100 2026 */}
+            <div className="mt-8">
+              <AwardBadge size={64} />
+            </div>
           </div>
 
           <div className="lg:col-span-2 lg:col-start-7">

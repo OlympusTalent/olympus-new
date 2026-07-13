@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { AwardBadge } from "@/components/award-badge";
 
 /* -- Hero stat definitions ---------------------------------------- */
 const HERO_STATS = [
@@ -185,6 +186,11 @@ export function HeroDecision() {
           <p className="mt-6 text-xs text-ot-smoke font-mono tracking-wider uppercase">
             This is not a sales call. It&apos;s a diagnostic.
           </p>
+
+          {/* Award seal -- Global 100 2026 */}
+          <div className="mt-10">
+            <AwardBadge size={84} />
+          </div>
         </div>
 
         {/* Data strip -- animated count-up */}
