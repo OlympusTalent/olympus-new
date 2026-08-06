@@ -25,7 +25,7 @@ const COHORT_STATS = [
   {
     target: 1046,
     suffix: "",
-    label: "Live Roles Right Now",
+    label: "Specialists in Network",
     sub: "Across all four verticals",
   },
 ];
