@@ -115,13 +115,13 @@ export default function JobDetailPage({
                     href="/book/career"
                     className="btn-primary w-full text-center text-sm mb-3"
                   >
-                    Apply for This Role <span aria-hidden>→</span>
+                    Register Your Interest <span aria-hidden>→</span>
                   </a>
                   <button className="btn-ghost w-full text-center text-sm">
                     Save Role
                   </button>
                   <p className="mt-4 text-[10px] text-ot-smoke font-mono tracking-wider text-center uppercase">
-                    1-click apply with LinkedIn or CV
+                    Starts a short career conversation — bring your CV or LinkedIn
                   </p>
                 </div>
               </div>
@@ -230,10 +230,10 @@ export default function JobDetailPage({
                   <div className="glass-strong p-6 lg:hidden" id="apply">
                     <p className="text-xl font-bold mb-4">{job.salary}</p>
                     <a
-                      href="#"
+                      href="/book/career"
                       className="btn-primary w-full text-center text-sm mb-3"
                     >
-                      Apply for This Role <span aria-hidden>→</span>
+                      Register Your Interest <span aria-hidden>→</span>
                     </a>
                     <button className="btn-ghost w-full text-center text-sm">
                       Save Role
