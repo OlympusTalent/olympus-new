@@ -226,8 +226,7 @@ export function JobsBoard() {
           {/* Stat strip */}
           <div className="mt-8 flex items-center gap-6 text-xs text-ot-smoke font-mono">
             <span>
-              <span className="text-ot-bone font-semibold">1,046</span> live
-              roles
+              <span className="text-ot-bone font-semibold">6M+</span> candidate reach
             </span>
             <span className="h-3 w-px bg-ot-steel" />
             <span>
