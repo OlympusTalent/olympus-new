@@ -184,9 +184,9 @@ export function JobsBoard() {
             <span className="gradient-text">Properly.</span>
           </h1>
           <p className="text-xl text-ot-ash max-w-2xl leading-relaxed">
-            {SAMPLE_JOBS.length.toLocaleString()}+ live roles across Payroll,
-            HR, IT &amp; Finance. Every role framed for impact, not job
-            descriptions copied from a template.
+            Senior mandates across Payroll, HR, IT &amp; Finance — and the
+            roles you can see are a fraction of what we&apos;re working. Every
+            role framed for impact, not job descriptions copied from a template.
           </p>
 
           {/* Search bar */}
@@ -329,13 +329,19 @@ export function JobsBoard() {
         {/* Results count */}
         <div className="flex items-center justify-between mb-8">
           <p className="text-sm text-ot-ash">
-            Showing{" "}
-            <span className="text-ot-bone font-semibold">
-              {filtered.length}
-            </span>{" "}
-            {filtered.length === 1 ? "role" : "roles"}
-            {hasFilters && (
-              <span className="text-ot-smoke"> (filtered)</span>
+            {hasFilters ? (
+              <>
+                Showing{" "}
+                <span className="text-ot-bone font-semibold">
+                  {filtered.length}
+                </span>{" "}
+                {filtered.length === 1 ? "role" : "roles"}
+                <span className="text-ot-smoke"> (filtered)</span>
+              </>
+            ) : (
+              <span className="text-ot-bone font-semibold">
+                Featured live mandates
+              </span>
             )}
           </p>
           <p className="text-[10px] font-mono tracking-wider uppercase text-ot-smoke">
