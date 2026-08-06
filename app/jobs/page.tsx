@@ -5,7 +5,7 @@ import { JobsBoard } from "@/components/jobs-board";
 export const metadata = {
   title: "Live Roles — Olympus Talent",
   description:
-    "Search live roles across Global Payroll, HR Leadership, IT & Engineering, and Finance & Control. 1,046+ roles across 140+ countries. Decision infrastructure for your next career move.",
+    "Search live roles across Global Payroll, HR Leadership, IT & Engineering, and Finance & Control. 17+ live roles and 6M+ candidate reach across 140+ countries. Decision infrastructure for your next career move.",
 };
 
 export default function JobsPage() {
