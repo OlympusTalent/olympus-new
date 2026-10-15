@@ -1,3 +1,5 @@
+import * as liveRoles from "./live-roles-oct-2026";
+
 export interface Job {
   slug: string;
   title: string;
@@ -19,6 +21,7 @@ export interface Job {
 }
 
 export const SAMPLE_JOBS: Job[] = [
+  ...liveRoles.LIVE_ROLES_OCT_2026,
   {
     slug: "global-head-of-payroll-london",
     title: "Global Head of Payroll",
