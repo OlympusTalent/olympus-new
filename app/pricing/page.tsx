@@ -135,7 +135,6 @@ const TIERS = [
 const COMPETITORS = [
   { name: "Hays", execution: true, intelligence: false, integration: false, strategy: false },
   { name: "JGA / Portfolio", execution: true, intelligence: false, integration: false, strategy: false },
-  { name: "Deel Talent", execution: true, intelligence: false, integration: true, strategy: false },
   { name: "Internal TA", execution: true, intelligence: "partial", integration: "partial", strategy: "partial" },
   { name: "Olympus Talent", execution: true, intelligence: true, integration: true, strategy: true },
 ];
