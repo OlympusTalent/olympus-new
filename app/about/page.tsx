@@ -34,6 +34,41 @@ const LAYERS = [
   { glyph: "改", name: "Kaizen", note: "Adaptation" },
 ];
 
+const BEYOND_SEARCH = [
+  {
+    eyebrow: "Olympus Intelligence",
+    accent: "text-ot-violet",
+    title: "Forensic payroll investigation and due diligence.",
+    body: "Twelve services across three pillars — Pre-Trust Intelligence, Internal Threat Intelligence, and Sensitive and Corporate Investigations. Fixed-fee, scoped, or on retainer.",
+    cta: "Ask about an investigation",
+    href: "/contact",
+  },
+  {
+    eyebrow: "Verified Hire Framework",
+    accent: "text-ot-cyan",
+    title: "Our answer to AI-generated candidates.",
+    body: "Synthetic identities are now applying for real jobs. Every Olympus candidate is checked across five pillars — Identity, Work History, Presence, Specialist Judgement, and a Verification Dossier.",
+    cta: "See how we verify",
+    href: "/book/advisory",
+  },
+  {
+    eyebrow: "The Signal",
+    accent: "text-ot-signal",
+    title: "A quarterly, board-grade intelligence briefing.",
+    body: "Strategic intelligence for the people who sign off the hire — written for boards, not for recruiters.",
+    cta: "Read about The Signal",
+    href: "/insights",
+  },
+  {
+    eyebrow: "The Secret Sauce Podcast",
+    accent: "text-ot-magenta",
+    title: "Not influencers. Operators.",
+    body: "Conversations with the payroll leaders, HR architects, finance operators and technology builders who keep global organisations running.",
+    cta: "Be a guest",
+    href: "/book/podcast",
+  },
+];
+
 const LOCATIONS = [
   "Dubai", "Manchester", "Paris", "Milan", "Boston", "New York",
   "Houston", "Singapore", "Iga, Japan", "Mumbai", "São Paulo",
@@ -76,7 +111,7 @@ export default function AboutPage() {
             </div>
             <div className="lg:col-span-8 space-y-6 text-lg text-ot-ash leading-relaxed">
               <p>
-                They have a decision problem. Two-thirds of senior hires fail
+                They have a decision problem. Nearly half of new hires fail
                 inside eighteen months — not because the talent isn&apos;t out
                 there, but because the decision framework wasn&apos;t. Briefs
                 describe tasks instead of outcomes. Hiring starts only once the
@@ -86,7 +121,7 @@ export default function AboutPage() {
               <p>
                 We started Olympus to fix that — to give organisations the same
                 rigour in hiring that they apply to finance, engineering and
-                operations. Not recruiters. Not CV brokers. An operating system
+                operations. Not recruiters. Not resume brokers. An operating system
                 that turns hiring from a liability into a competitive advantage,
                 running across every function and every geography.
               </p>
@@ -160,8 +195,35 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Founder note */}
+        {/* Beyond search */}
         <section className="py-20 md:py-28 bg-ot-midnight border-t border-ot-steel/40">
+          <div className="max-w-content mx-auto px-6 md:px-12 lg:px-20">
+            <div className="max-w-2xl">
+              <span className="eyebrow text-ot-violet">Beyond Search</span>
+              <h2 className="mt-4 font-sans font-black text-3xl md:text-4xl tracking-[-0.02em]">
+                Four more ways Olympus shows its work.
+              </h2>
+            </div>
+            <div className="mt-12 grid sm:grid-cols-2 gap-6">
+              {BEYOND_SEARCH.map((b) => (
+                <div key={b.eyebrow} className="glass data-card p-8 flex flex-col">
+                  <span className={"eyebrow " + b.accent}>{b.eyebrow}</span>
+                  <h3 className="mt-4 font-bold text-xl text-ot-bone">{b.title}</h3>
+                  <p className="mt-3 text-ot-ash leading-relaxed flex-1">{b.body}</p>
+                  <Link
+                    href={b.href}
+                    className="mt-6 text-sm font-semibold text-ot-bone hover:text-ot-violet transition-colors"
+                  >
+                    {b.cta} <span aria-hidden>→</span>
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Founder */}
+        <section className="py-20 md:py-28 border-t border-ot-steel/40">
           <div className="max-w-content mx-auto px-6 md:px-12 lg:px-20">
             <div className="max-w-3xl">
               <span className="eyebrow text-ot-cyan">From the Founder</span>
@@ -177,8 +239,34 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <div className="font-bold text-ot-bone">Ian O&apos;Callaghan</div>
-                  <div className="text-sm text-ot-ash">Founder, Olympus Talent</div>
+                  <div className="text-sm text-ot-ash">Founder &amp; CEO, Olympus Talent</div>
                 </div>
+              </div>
+              <div className="mt-10 space-y-5 text-lg text-ot-ash leading-relaxed">
+                <p>
+                  Ian O&apos;Callaghan founded Olympus Talent and leads it as
+                  CEO. Global payroll leadership is the firm&apos;s founding
+                  specialism. HR, Finance and IT Engineering sit beside it
+                  today, across 140+ countries.
+                </p>
+                <p>
+                  He publishes The Signal, hosts The Secret Sauce Podcast, and
+                  runs Olympus Intelligence, the firm&apos;s forensic payroll
+                  investigation line. In 2026, Olympus Talent was named Best
+                  Staffing &amp; Recruiting Business of the Year, United Arab
+                  Emirates, by Global 100.
+                </p>
+                <p className="text-ot-bone">
+                  Call him on{" "}
+                  <a href="tel:+447713055409" className="underline decoration-ot-violet/60 underline-offset-4 hover:text-ot-violet transition-colors">
+                    +44 7713 055409
+                  </a>{" "}
+                  or write to{" "}
+                  <a href="mailto:ian@olympus-talent.com" className="underline decoration-ot-violet/60 underline-offset-4 hover:text-ot-violet transition-colors">
+                    ian@olympus-talent.com
+                  </a>
+                  .
+                </p>
               </div>
             </div>
           </div>

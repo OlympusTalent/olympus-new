@@ -34,7 +34,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Payroll",
     contract: "Permanent",
     experience: "Director",
-    posted: "2 days ago",
+    posted: "Live",
     urgent: true,
     featured: true,
     summary:
@@ -56,7 +56,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "HR",
     contract: "Permanent",
     experience: "C-Suite",
-    posted: "1 day ago",
+    posted: "Live",
     urgent: true,
     featured: true,
     summary:
@@ -77,7 +77,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "IT & Engineering",
     contract: "Permanent",
     experience: "C-Suite",
-    posted: "3 days ago",
+    posted: "Live",
     urgent: false,
     featured: true,
     summary:
@@ -99,7 +99,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Finance",
     contract: "Permanent",
     experience: "Director",
-    posted: "5 days ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -121,7 +121,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Payroll",
     contract: "Contract",
     experience: "Senior",
-    posted: "1 week ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -143,7 +143,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "HR",
     contract: "Permanent",
     experience: "Senior",
-    posted: "4 days ago",
+    posted: "Live",
     urgent: true,
     featured: false,
     summary:
@@ -164,7 +164,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "IT & Engineering",
     contract: "Permanent",
     experience: "Senior",
-    posted: "6 days ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -186,7 +186,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Finance",
     contract: "Permanent",
     experience: "Director",
-    posted: "3 days ago",
+    posted: "Live",
     urgent: false,
     featured: true,
     summary:
@@ -404,7 +404,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Payroll",
     contract: "Permanent",
     experience: "Mid",
-    posted: "1 day ago",
+    posted: "Live",
     urgent: true,
     featured: true,
     summary:
@@ -425,7 +425,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Payroll",
     contract: "Permanent",
     experience: "Mid",
-    posted: "2 days ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -446,7 +446,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Payroll",
     contract: "Permanent",
     experience: "Mid",
-    posted: "3 days ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -467,7 +467,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Payroll",
     contract: "Permanent",
     experience: "Mid",
-    posted: "4 days ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -488,7 +488,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Payroll",
     contract: "Permanent",
     experience: "Mid",
-    posted: "5 days ago",
+    posted: "Live",
     urgent: true,
     featured: false,
     summary:
@@ -509,7 +509,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Payroll",
     contract: "Permanent",
     experience: "Mid",
-    posted: "6 days ago",
+    posted: "Live",
     urgent: false,
     featured: true,
     summary:
@@ -530,7 +530,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Payroll",
     contract: "Permanent",
     experience: "Mid",
-    posted: "1 week ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -551,7 +551,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Payroll",
     contract: "Permanent",
     experience: "Senior",
-    posted: "1 week ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -572,7 +572,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Payroll",
     contract: "Permanent",
     experience: "Senior",
-    posted: "2 weeks ago",
+    posted: "Live",
     urgent: true,
     featured: false,
     summary:
@@ -593,7 +593,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Payroll",
     contract: "Permanent",
     experience: "Senior",
-    posted: "2 weeks ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -614,7 +614,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Payroll",
     contract: "Permanent",
     experience: "Senior",
-    posted: "1 day ago",
+    posted: "Live",
     urgent: false,
     featured: true,
     summary:
@@ -635,7 +635,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Payroll",
     contract: "Permanent",
     experience: "Senior",
-    posted: "2 days ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -656,7 +656,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Payroll",
     contract: "Permanent",
     experience: "Director",
-    posted: "3 days ago",
+    posted: "Live",
     urgent: true,
     featured: true,
     summary:
@@ -677,7 +677,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Payroll",
     contract: "Permanent",
     experience: "Mid",
-    posted: "4 days ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -698,7 +698,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Payroll",
     contract: "Permanent",
     experience: "Mid",
-    posted: "5 days ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -719,7 +719,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Payroll",
     contract: "Permanent",
     experience: "Senior",
-    posted: "6 days ago",
+    posted: "Live",
     urgent: false,
     featured: true,
     summary:
@@ -740,7 +740,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Payroll",
     contract: "Permanent",
     experience: "Senior",
-    posted: "1 week ago",
+    posted: "Live",
     urgent: true,
     featured: false,
     summary:
@@ -761,7 +761,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Payroll",
     contract: "Permanent",
     experience: "Senior",
-    posted: "1 week ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -782,7 +782,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Payroll",
     contract: "Permanent",
     experience: "Director",
-    posted: "2 weeks ago",
+    posted: "Live",
     urgent: true,
     featured: true,
     summary:
@@ -803,7 +803,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Payroll",
     contract: "Permanent",
     experience: "Senior",
-    posted: "2 weeks ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -824,7 +824,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Payroll",
     contract: "Permanent",
     experience: "Senior",
-    posted: "1 day ago",
+    posted: "Live",
     urgent: true,
     featured: true,
     summary:
@@ -845,7 +845,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Payroll",
     contract: "Permanent",
     experience: "Senior",
-    posted: "2 days ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -866,7 +866,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Payroll",
     contract: "Permanent",
     experience: "Senior",
-    posted: "3 days ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -887,7 +887,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "HR",
     contract: "Permanent",
     experience: "Senior",
-    posted: "4 days ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -908,7 +908,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "HR",
     contract: "Permanent",
     experience: "Senior",
-    posted: "5 days ago",
+    posted: "Live",
     urgent: true,
     featured: false,
     summary:
@@ -929,7 +929,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "HR",
     contract: "Permanent",
     experience: "Senior",
-    posted: "6 days ago",
+    posted: "Live",
     urgent: false,
     featured: true,
     summary:
@@ -950,7 +950,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "HR",
     contract: "Permanent",
     experience: "Director",
-    posted: "1 week ago",
+    posted: "Live",
     urgent: true,
     featured: true,
     summary:
@@ -971,7 +971,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "HR",
     contract: "Permanent",
     experience: "Mid",
-    posted: "1 week ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -992,7 +992,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "IT & Engineering",
     contract: "Permanent",
     experience: "Senior",
-    posted: "2 weeks ago",
+    posted: "Live",
     urgent: true,
     featured: false,
     summary:
@@ -1014,7 +1014,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "IT & Engineering",
     contract: "Permanent",
     experience: "Senior",
-    posted: "2 weeks ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -1036,7 +1036,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "IT & Engineering",
     contract: "Permanent",
     experience: "Senior",
-    posted: "1 day ago",
+    posted: "Live",
     urgent: false,
     featured: true,
     summary:
@@ -1058,7 +1058,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "IT & Engineering",
     contract: "Permanent",
     experience: "Senior",
-    posted: "2 days ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -1080,7 +1080,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "IT & Engineering",
     contract: "Permanent",
     experience: "Senior",
-    posted: "3 days ago",
+    posted: "Live",
     urgent: true,
     featured: false,
     summary:
@@ -1102,7 +1102,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "IT & Engineering",
     contract: "Permanent",
     experience: "Senior",
-    posted: "4 days ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -1124,7 +1124,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "IT & Engineering",
     contract: "Permanent",
     experience: "Senior",
-    posted: "5 days ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -1146,7 +1146,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "IT & Engineering",
     contract: "Permanent",
     experience: "Senior",
-    posted: "6 days ago",
+    posted: "Live",
     urgent: false,
     featured: true,
     summary:
@@ -1168,7 +1168,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "IT & Engineering",
     contract: "Permanent",
     experience: "Director",
-    posted: "1 week ago",
+    posted: "Live",
     urgent: true,
     featured: true,
     summary:
@@ -1190,7 +1190,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "IT & Engineering",
     contract: "Permanent",
     experience: "Senior",
-    posted: "1 week ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -1212,7 +1212,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Finance",
     contract: "Permanent",
     experience: "Director",
-    posted: "2 weeks ago",
+    posted: "Live",
     urgent: true,
     featured: true,
     summary:
@@ -1233,7 +1233,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Finance",
     contract: "Permanent",
     experience: "Director",
-    posted: "2 weeks ago",
+    posted: "Live",
     urgent: true,
     featured: true,
     summary:
@@ -1254,7 +1254,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Finance",
     contract: "Permanent",
     experience: "Senior",
-    posted: "1 day ago",
+    posted: "Live",
     urgent: true,
     featured: true,
     summary:
@@ -1275,7 +1275,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Finance",
     contract: "Permanent",
     experience: "Senior",
-    posted: "2 days ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -1296,7 +1296,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Finance",
     contract: "Permanent",
     experience: "Mid",
-    posted: "3 days ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -1317,7 +1317,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Sales",
     contract: "Permanent",
     experience: "Senior",
-    posted: "4 days ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -1338,7 +1338,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Sales",
     contract: "Permanent",
     experience: "Senior",
-    posted: "5 days ago",
+    posted: "Live",
     urgent: true,
     featured: false,
     summary:
@@ -1359,7 +1359,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Sales",
     contract: "Permanent",
     experience: "Senior",
-    posted: "6 days ago",
+    posted: "Live",
     urgent: false,
     featured: true,
     summary:
@@ -1380,7 +1380,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Sales",
     contract: "Permanent",
     experience: "Senior",
-    posted: "1 week ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -1401,7 +1401,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Sales",
     contract: "Permanent",
     experience: "Senior",
-    posted: "1 week ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -1422,7 +1422,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Sales",
     contract: "Permanent",
     experience: "Senior",
-    posted: "2 weeks ago",
+    posted: "Live",
     urgent: true,
     featured: false,
     summary:
@@ -1443,7 +1443,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Sales",
     contract: "Permanent",
     experience: "Senior",
-    posted: "2 weeks ago",
+    posted: "Live",
     urgent: false,
     featured: false,
     summary:
@@ -1464,7 +1464,7 @@ export const SAMPLE_JOBS: Job[] = [
     function: "Sales",
     contract: "Permanent",
     experience: "Senior",
-    posted: "1 day ago",
+    posted: "Live",
     urgent: false,
     featured: true,
     summary:

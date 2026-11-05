@@ -128,9 +128,9 @@ export default function HireIQPage() {
               </p>
               <div className="mt-8 grid sm:grid-cols-3 gap-4">
                 {[
-                  { stat: "67%", label: "of hires fail within 18 months" },
-                  { stat: "\u00A3240k", label: "average cost of a mis-hire" },
-                  { stat: "0%", label: "of companies measure decision quality" },
+                  { stat: "46%", label: "of new hires fail within 18 months (Leadership IQ)" },
+                  { stat: "89%", label: "of those failures are attitude, not skill (Leadership IQ)" },
+                  { stat: "~50%", label: "of executives judged to be failing inside two years (McKinsey)" },
                 ].map((s) => (
                   <div key={s.label} className="glass p-5 text-center">
                     <div className="text-2xl font-bold gradient-text">
@@ -224,7 +224,7 @@ export default function HireIQPage() {
                 {
                   step: "03",
                   title: "Decide",
-                  desc: "Decision-makers see structured intelligence, not CVs. Predictive alignment, risk flags, and outcome probability.",
+                  desc: "Decision-makers see structured intelligence, not resumes. Predictive alignment, risk flags, and outcome probability.",
                 },
                 {
                   step: "04",

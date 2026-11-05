@@ -107,7 +107,7 @@ export default function JobDetailPage({
                   </div>
                   <div className="mb-6">
                     <p className="text-[10px] font-mono uppercase tracking-wider text-ot-smoke mb-1">
-                      Posted
+                      Status
                     </p>
                     <p className="text-sm text-ot-ash">{job.posted}</p>
                   </div>
@@ -117,11 +117,16 @@ export default function JobDetailPage({
                   >
                     Register Your Interest <span aria-hidden>→</span>
                   </a>
-                  <button className="btn-ghost w-full text-center text-sm">
-                    Save Role
-                  </button>
+                  <a
+                    href={`mailto:payroll@olympus-talent.com?subject=${encodeURIComponent(
+                      `Application: ${job.title} (${job.location})`
+                    )}`}
+                    className="btn-ghost w-full text-center text-sm"
+                  >
+                    Email Your Resume
+                  </a>
                   <p className="mt-4 text-[10px] text-ot-smoke font-mono tracking-wider text-center uppercase">
-                    Starts a short career conversation — bring your CV or LinkedIn
+                    Starts a short career conversation — bring your resume or LinkedIn
                   </p>
                 </div>
               </div>
@@ -206,7 +211,7 @@ export default function JobDetailPage({
                   <p className="text-ot-ash leading-relaxed text-[15px] mb-4">
                     Every candidate submitted for this role will carry a FIRE
                     Protocol™ score — a four-axis assessment of Fit, Impact,
-                    Readiness, and Elevation. No blind CVs. No keyword matching.
+                    Readiness, and Elevation. No blind resumes. No keyword matching.
                     A defensible, data-backed recommendation.
                   </p>
                   <div className="flex flex-wrap gap-2">
@@ -235,9 +240,14 @@ export default function JobDetailPage({
                     >
                       Register Your Interest <span aria-hidden>→</span>
                     </a>
-                    <button className="btn-ghost w-full text-center text-sm">
-                      Save Role
-                    </button>
+                    <a
+                      href={`mailto:payroll@olympus-talent.com?subject=${encodeURIComponent(
+                        `Application: ${job.title} (${job.location})`
+                      )}`}
+                      className="btn-ghost w-full text-center text-sm"
+                    >
+                      Email Your Resume
+                    </a>
                   </div>
 
                   {/* Similar roles */}

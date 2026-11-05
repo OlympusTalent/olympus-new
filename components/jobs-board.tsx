@@ -184,9 +184,9 @@ export function JobsBoard() {
             <span className="gradient-text">Properly.</span>
           </h1>
           <p className="text-xl text-ot-ash max-w-2xl leading-relaxed">
-            Senior mandates across Payroll, HR, IT &amp; Finance — and the
-            roles you can see are a fraction of what we&apos;re working. Every
-            role framed for impact, not job descriptions copied from a template.
+            Live mandates from specialist to C-suite across Payroll, HR, IT,
+            Finance and the commercial teams around them — and the roles you
+            can see are a fraction of what we&apos;re working.
           </p>
 
           {/* Search bar */}

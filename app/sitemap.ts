@@ -18,6 +18,8 @@ const ROUTES = [
   "/about",
   "/contact",
   "/insights",
+  "/privacy",
+  "/book/podcast",
   "/book/advisory",
 ];
 

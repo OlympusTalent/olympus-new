@@ -14,19 +14,19 @@ const COHORT_STATS = [
     target: 98,
     suffix: "%",
     label: "12-Month Retention",
-    sub: "Industry average: 71%",
+    sub: "Measured twelve months after start",
   },
   {
     target: 14,
     suffix: " days",
     label: "Average Time-to-Hire",
-    sub: "Industry average: 14 weeks",
+    sub: "Executive benchmark: 45 days (SHRM, 2025)",
   },
   {
     target: 1046,
     suffix: "",
-    label: "Specialists in Network",
-    sub: "Across all four verticals",
+    label: "Senior Specialists Tracked",
+    sub: "Mapped one by one, inside a 6M+ reach",
   },
 ];
 
@@ -182,7 +182,7 @@ export function IntelligenceDashboard() {
               <p className="text-[11px] font-mono uppercase tracking-wider text-ot-smoke mb-1.5">
                 Urgency
               </p>
-              <p className="font-semibold text-[15px] text-ot-signal">Q2 2026 Start</p>
+              <p className="font-semibold text-[15px] text-ot-signal">Q1 2027 Start</p>
             </div>
           </div>
 

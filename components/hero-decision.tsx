@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 const HERO_STATS = [
   { target: 6, prefix: "", suffix: "M+", label: "Global candidate reach", highlight: true },
   { target: 10, prefix: "", suffix: "+ yrs", label: "Zero rebates issued", highlight: true },
-  { target: 14, prefix: "", suffix: " wks", label: "Industry avg time-to-hire", highlight: true },
+  { target: 45, prefix: "", suffix: " days", label: "Executive time-to-fill benchmark (SHRM, 2025)", highlight: true },
   { target: 14, prefix: "", suffix: " days", label: "Olympus average", highlight: true },
 ];
 
@@ -161,18 +161,14 @@ export function HeroDecision() {
             </span>
           </h1>
 
-          <p className="mt-8 text-xl md:text-2xl text-ot-ash leading-relaxed max-w-2xl font-light">
-            Decision infrastructure for hiring across Payroll, HR, IT &amp;
-            Finance.{" "}
-            <span className="text-ot-bone font-normal">
-              6M+ candidate reach. 140+ countries. 14-day hires. 98% retention.
-            </span>
+          <p className="mt-8 text-xl md:text-2xl text-ot-bone leading-relaxed max-w-2xl font-light">
+            We source, place and retain senior Payroll, HR, IT and Finance
+            leaders in 140+ countries — and build the system that makes those
+            hires hold.
           </p>
 
-          <p className="mt-5 text-base md:text-lg text-ot-smoke leading-relaxed max-w-2xl">
-            In plain terms: we source, place and retain senior Payroll, HR, IT and
-            Finance leaders in 140+ countries — and build the system that makes
-            those hires hold.
+          <p className="mt-5 text-base md:text-lg text-ot-ash leading-relaxed max-w-2xl">
+            6M+ candidate reach. 140+ countries. 14-day hires. 98% retention.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4">

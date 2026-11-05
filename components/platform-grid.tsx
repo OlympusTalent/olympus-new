@@ -12,7 +12,7 @@ const FEATURES: Feature[] = [
     name: "FIRE Protocol™",
     tagline: "Fit. Impact. Readiness. Elevation.",
     body:
-      "Four-axis candidate scoring that moves beyond the CV. Every shortlisted candidate arrives with a defensible, board-ready score across the dimensions that predict long-term success.",
+      "Four-axis candidate scoring that moves beyond the resume. Every shortlisted candidate arrives with a defensible, board-ready score across the dimensions that predict long-term success.",
     accent: "violet",
   },
   {

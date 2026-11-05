@@ -50,11 +50,11 @@ const LAYERS: Layer[] = [
     domainsLabel: "The Six Domains of Seishin",
     domains: [
       { n: "Outcome Definition", d: "What must be true in twelve months that isn't true today." },
-      { n: "Capability Profiling", d: "The capacities the role demands, not the CV it attracts." },
+      { n: "Capability Profiling", d: "The capacities the role demands, not the resume it attracts." },
       { n: "Culture Markers", d: "The behaviours that succeed here, made explicit." },
       { n: "Role Architecture", d: "Where the seat sits in the system, and what it owns." },
       { n: "Success Metrics", d: "The signal that proves the decision was right." },
-      { n: "Decision Criteria", d: "Agreed before the first CV, not argued after the last." },
+      { n: "Decision Criteria", d: "Agreed before the first resume, not argued after the last." },
     ],
     diagnostic: {
       name: "The Clarity Test",
@@ -128,7 +128,7 @@ const LAYERS: Layer[] = [
     bg: "bg-ot-warn/15",
     coreQuestion: "Can you deploy faster than the market can react?",
     intro:
-      "Strategy without execution is theatre. Yōnin is deployment — embedded teams, subscription delivery, FIRE Protocol™ scoring on every shortlist. Two weeks, not fourteen.",
+      "Strategy without execution is theatre. Yōnin is deployment — embedded teams, subscription delivery, FIRE Protocol™ scoring on every shortlist. Two weeks, not months.",
     domainsLabel: "The Six Domains of Yōnin",
     domains: [
       { n: "Embedded Teams", d: "Inside the business, not at arm's length." },

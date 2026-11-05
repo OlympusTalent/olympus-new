@@ -6,7 +6,7 @@ import { SiteFooter } from "@/components/site-footer";
 export const metadata: Metadata = {
   title: "Contact — Olympus Talent",
   description:
-    "Talk to Olympus Talent. Book a hiring diagnostic, explore roles, or reach the team directly. Decision infrastructure for hiring across Payroll, HR, IT and Finance in 140+ countries.",
+    "Talk to Olympus Talent. Book a hiring diagnostic, explore roles, or call and email the team directly. Decision infrastructure for hiring across Payroll, HR, IT and Finance in 140+ countries.",
   alternates: { canonical: "/contact" },
   openGraph: {
     title: "Contact — Olympus Talent",
@@ -91,21 +91,38 @@ export default function ContactPage() {
             <div className="lg:col-span-7">
               <span className="eyebrow text-ot-cyan">Direct Line</span>
               <h2 className="mt-4 font-sans font-black text-2xl md:text-3xl tracking-[-0.02em]">
-                Prefer to email?
+                Prefer to call or email?
               </h2>
               <p className="mt-4 text-ot-ash leading-relaxed max-w-xl">
-                Reach the team directly and we&apos;ll respond within one business
-                day. For press, partnerships or anything else — start here.
+                You reach the founder, not a switchboard. We respond within one
+                business day. For press, partnerships or anything else — start
+                here.
               </p>
             </div>
             <div className="lg:col-span-5">
               <div className="glass p-6 md:p-8">
-                <div className="eyebrow text-ot-smoke mb-2">Email</div>
+                <div className="eyebrow text-ot-smoke mb-2">Phone</div>
+                <a
+                  href="tel:+447713055409"
+                  className="text-xl md:text-2xl font-bold text-ot-bone hover:text-ot-violet transition-colors"
+                >
+                  +44 7713 055409
+                </a>
+                <div className="eyebrow text-ot-smoke mt-6 mb-2">Email</div>
                 <a
                   href="mailto:ian@olympus-talent.com"
                   className="text-xl md:text-2xl font-bold text-ot-bone hover:text-ot-violet transition-colors break-all"
                 >
                   ian@olympus-talent.com
+                </a>
+                <div className="eyebrow text-ot-smoke mt-6 mb-2">
+                  Resumes and applications
+                </div>
+                <a
+                  href="mailto:payroll@olympus-talent.com"
+                  className="text-base md:text-lg font-semibold text-ot-bone hover:text-ot-violet transition-colors break-all"
+                >
+                  payroll@olympus-talent.com
                 </a>
                 <div className="mt-6 flex items-center gap-3 text-xs text-ot-smoke font-mono">
                   <span className="h-2 w-2 rounded-full bg-ot-signal" />

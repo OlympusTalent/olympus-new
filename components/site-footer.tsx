@@ -24,9 +24,24 @@ export function SiteFooter() {
             </div>
             <p className="text-ot-ash text-sm leading-relaxed max-w-sm">
               Decision infrastructure for hiring under pressure. Not recruiters.
-              Not CV brokers. The operating system that turns hiring from a
+              Not resume brokers. The operating system that turns hiring from a
               liability into a competitive advantage.
             </p>
+
+            <div className="mt-6 space-y-1 text-sm">
+              <a
+                href="tel:+447713055409"
+                className="block text-ot-bone hover:text-ot-violet transition-colors"
+              >
+                +44 7713 055409
+              </a>
+              <a
+                href="mailto:ian@olympus-talent.com"
+                className="block text-ot-bone hover:text-ot-violet transition-colors"
+              >
+                ian@olympus-talent.com
+              </a>
+            </div>
 
             {/* Award seal -- Global 100 2026 */}
             <div className="mt-8">
@@ -105,8 +120,18 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li>
+                <Link href="/book/podcast" className="hover:text-ot-bone transition-colors">
+                  The Secret Sauce Podcast
+                </Link>
+              </li>
+              <li>
                 <Link href="/contact" className="hover:text-ot-bone transition-colors">
                   Contact
+                </Link>
+              </li>
+              <li>
+                <Link href="/privacy" className="hover:text-ot-bone transition-colors">
+                  Privacy
                 </Link>
               </li>
             </ul>

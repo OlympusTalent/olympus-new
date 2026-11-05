@@ -33,7 +33,7 @@ const OS_LAYERS = [
     color: "border-ot-warn/50",
     labelColor: "text-ot-warn",
     delay: "1.8s",
-    body: "Deploy. Embedded teams, subscription delivery, FIRE Protocol™ scoring on every shortlist. Two weeks, not fourteen.",
+    body: "Deploy. Embedded teams, subscription delivery, FIRE Protocol™ scoring on every shortlist. Two weeks, not months.",
   },
   {
     kanji: "忍",

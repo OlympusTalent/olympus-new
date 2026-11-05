@@ -23,7 +23,7 @@ const PROTOCOLS = [
     body: (
       <>
         <strong className="text-ot-bone">Fit. Impact. Readiness. Elevation.</strong>{" "}
-        Four-axis candidate scoring that moves beyond the CV. Every shortlisted
+        Four-axis candidate scoring that moves beyond the resume. Every shortlisted
         candidate arrives with a defensible, board-ready score across the
         dimensions that predict long-term success.
       </>

@@ -2,53 +2,64 @@
 
 import { useEffect, useRef, useState } from "react";
 
-const PROBLEMS = [
+type Problem = {
+  label: string;
+  stat: string;
+  numericValue: number | null;
+  suffix: string;
+  title: string;
+  body: string;
+  source?: string;
+  color: string;
+  fill: number;
+  gradient?: string;
+};
+
+const PROBLEMS: Problem[] = [
   {
     label: "Mis-Hires",
-    stat: "67%",
-    numericValue: 67,
+    stat: "46%",
+    numericValue: 46,
     suffix: "%",
     title: "Wrong people in critical seats",
-    body: "Two-thirds of senior hires fail within 18 months. Not because the talent isn\u2019t there \u2014 because the decision framework wasn\u2019t. You\u2019re choosing on instinct where you should be choosing on infrastructure.",
+    body: "Nearly half of new hires fail within 18 months. Not because the talent isn\u2019t there \u2014 because the decision framework wasn\u2019t. You\u2019re choosing on instinct where you should be choosing on infrastructure.",
+    source: "Leadership IQ, study of 20,000+ new hires",
     color: "text-ot-crimson",
-    barColor: undefined as string | undefined,
-    fill: 67,
-    gradient: undefined as string | undefined,
+    fill: 46,
   },
   {
     label: "Slow Hiring",
-    stat: "14 weeks",
-    numericValue: 14,
-    suffix: " weeks",
-    title: "Every week costs you \u00A334k",
-    body: "The average enterprise vacancy sits open for 14 weeks. That\u2019s 14 weeks of productivity loss, team burnout, missed targets, and competitors moving faster. Speed isn\u2019t a nice-to-have. It\u2019s a P&L line.",
+    stat: "45 days",
+    numericValue: 45,
+    suffix: " days",
+    title: "Every open week is a P&L line",
+    body: "The benchmark time-to-fill for an executive seat is 45 days \u2014 before the notice period even starts. That\u2019s weeks of lost output, team burnout, missed targets, and competitors moving faster. Speed isn\u2019t a nice-to-have. It\u2019s a P&L line.",
+    source: "SHRM Recruiting Benchmarking, 2025",
     color: "text-ot-warn",
-    barColor: undefined as string | undefined,
-    fill: 85,
+    fill: 70,
     gradient: "linear-gradient(90deg,#F59E0B,#F97316)",
   },
   {
     label: "Poor Briefs",
-    stat: "82%",
-    numericValue: 82,
+    stat: "89%",
+    numericValue: 89,
     suffix: "%",
     title: "Garbage in, garbage out",
-    body: "82% of hiring briefs lack the strategic context needed to source effectively. They describe tasks, not outcomes. They list qualifications, not culture markers. The brief is where most hires go wrong \u2014 before a single CV is read.",
+    body: "89% of hiring failures come down to attitude, not technical skill. Yet most briefs describe tasks, not outcomes. They list qualifications, not culture markers. The brief is where most hires go wrong \u2014 before a single resume is read.",
+    source: "Leadership IQ, study of 20,000+ new hires",
     color: "text-ot-magenta",
-    barColor: undefined as string | undefined,
-    fill: 82,
+    fill: 89,
     gradient: "linear-gradient(90deg,#EC4899,#A855F7)",
   },
   {
     label: "Reactive Decisions",
-    stat: "91%",
-    numericValue: 91,
-    suffix: "%",
+    stat: "Too late",
+    numericValue: null,
+    suffix: "",
     title: "You\u2019re hiring backwards",
-    body: "91% of companies only start hiring after the seat is empty. That\u2019s like building a fire escape after the building\u2019s on fire. Strategic hiring is anticipatory. It\u2019s pipeline infrastructure \u2014 built before you need it.",
+    body: "Most companies only start hiring after the seat is empty. That\u2019s like building a fire escape after the building\u2019s on fire. Strategic hiring is anticipatory. It\u2019s pipeline infrastructure \u2014 built before you need it.",
     color: "text-ot-smoke",
-    barColor: undefined as string | undefined,
-    fill: 91,
+    fill: 100,
     gradient: "linear-gradient(90deg,#4A4A60,#7A7A90)",
   },
 ];
@@ -86,7 +97,7 @@ function useCountUp(target: number, isVisible: boolean, duration = 1600) {
 }
 
 /* ── single problem card ───────────────────────────────────── */
-function ProblemCard({ p, index }: { p: (typeof PROBLEMS)[number]; index: number }) {
+function ProblemCard({ p, index }: { p: Problem; index: number }) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
 
@@ -106,7 +117,7 @@ function ProblemCard({ p, index }: { p: (typeof PROBLEMS)[number]; index: number
     return () => obs.disconnect();
   }, []);
 
-  const count = useCountUp(p.numericValue, visible);
+  const count = useCountUp(p.numericValue ?? 0, visible);
 
   return (
     <div
@@ -121,12 +132,21 @@ function ProblemCard({ p, index }: { p: (typeof PROBLEMS)[number]; index: number
       <div className="flex items-center justify-between mb-6">
         <span className={`eyebrow ${p.color}`}>{p.label}</span>
         <span className={`text-2xl font-bold tabular-nums ${p.color}`}>
-          {count}
-          {p.suffix}
+          {p.numericValue === null ? p.stat : (
+            <>
+              {count}
+              {p.suffix}
+            </>
+          )}
         </span>
       </div>
       <h3 className="text-xl font-semibold mb-3">{p.title}</h3>
       <p className="text-ot-ash text-sm leading-relaxed">{p.body}</p>
+      {p.source && (
+        <p className="mt-4 text-[10px] font-mono uppercase tracking-wider text-ot-smoke">
+          Source: {p.source}
+        </p>
+      )}
       <div className="mt-6 progress-bar">
         <div
           className="progress-fill"

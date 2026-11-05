@@ -32,7 +32,7 @@ const STRANDS = [
   {
     glyph: "精",
     title: "Function Deep-Dives",
-    body: "What actually predicts success when hiring for Payroll, HR, Finance and Engineering leadership — beyond the CV.",
+    body: "What actually predicts success when hiring for Payroll, HR, Finance and Engineering leadership — beyond the resume.",
     accent: "text-ot-signal",
   },
   {
@@ -67,9 +67,10 @@ export default function InsightsPage() {
               <span className="gradient-text">build hiring infrastructure.</span>
             </h1>
             <p className="mt-8 text-xl md:text-2xl text-ot-ash leading-relaxed max-w-3xl font-light">
-              The Signal is Olympus Talent&apos;s thinking made public — market
-              intelligence, decision frameworks and reports for leaders who hire
-              like it matters. We&apos;re building the first issue now.
+              The Signal is Olympus Talent&apos;s quarterly, board-grade
+              intelligence briefing — market intelligence, decision frameworks
+              and reports for leaders who hire like it matters. We&apos;re
+              building the first issue now.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <a
