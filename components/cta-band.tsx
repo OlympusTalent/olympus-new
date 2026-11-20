@@ -25,7 +25,6 @@ export function CTABand() {
         <p className="mt-5 text-xs tracking-wider text-ot-smoke uppercase">
           Two weeks to transformation. No credit card required.
         </p>
-        <div className="meander-strong mt-16 max-w-xl mx-auto opacity-90" />
       </div>
     </section>
   );
