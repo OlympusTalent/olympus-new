@@ -2,6 +2,72 @@ import type { Job } from "./sample-jobs";
 
 // Live contract mandates added 14 Oct 2026. Client is confidential.
 export const LIVE_ROLES_OCT_2026: Job[] = [
+  // Added 20 Nov 2026.
+  {
+    slug: "payroll-operator-mexico-migration",
+    title: "Payroll Operator — Mexico (Migration Project)",
+    company: "Confidential — Global Employment Platform",
+    companyContext:
+      "A global employment platform migrating its Mexico payroll operation. Experienced operators needed now.",
+    location: "Mexico",
+    remote: "Remote",
+    salary: "USD 450/day",
+    function: "Payroll",
+    contract: "Contract",
+    experience: "Senior",
+    posted: "Live",
+    urgent: true,
+    featured: true,
+    summary:
+      "Run Mexican payroll through a live migration. IMSS, INFONAVIT, ISR, CFDI — every pay run right while the system moves underneath it.",
+    impact:
+      "Several operators needed. Three to six month contract. Immediate start. Spanish essential, English a plus. Central Time.",
+    tags: ["Mexico", "Payroll Operations", "Migration", "Spanish"],
+  },
+  {
+    slug: "payroll-implementation-consultant-silae-france",
+    title: "Payroll Implementation Consultant — Silae",
+    company: "Confidential — Global Employment Platform",
+    companyContext:
+      "A global employment platform implementing French payroll on Silae.",
+    location: "France",
+    remote: "Remote",
+    salary: "€450/day",
+    function: "Payroll",
+    contract: "Contract",
+    experience: "Senior",
+    posted: "Live",
+    urgent: true,
+    featured: true,
+    summary:
+      "Take Silae payroll live in France. DSN, conventions collectives, URSSAF — configured right the first time.",
+    impact:
+      "A hands-on implementation from design to go-live. Six months minimum.",
+    techStack: ["Silae"],
+    tags: ["France", "Implementation", "Silae"],
+  },
+  {
+    slug: "payroll-implementation-consultant-egecko-germany",
+    title: "Payroll Implementation Consultant — eGECKO",
+    company: "Confidential — Global Employment Platform",
+    companyContext:
+      "A global employment platform implementing German payroll on eGECKO.",
+    location: "Germany",
+    remote: "Remote",
+    salary: "€450/day",
+    function: "Payroll",
+    contract: "Contract",
+    experience: "Senior",
+    posted: "Live",
+    urgent: true,
+    featured: true,
+    summary:
+      "Take eGECKO payroll live in Germany. Lohnsteuer, Sozialversicherung, DEÜV — built to run clean from the first pay run.",
+    impact:
+      "A hands-on implementation from design to go-live. Six months minimum.",
+    techStack: ["eGECKO"],
+    tags: ["Germany", "Implementation", "eGECKO"],
+  },
   {
     slug: "payroll-operations-specialist-argentina",
     title: "Payroll Operations Specialist (Urgent Temp)",
@@ -61,7 +127,7 @@ export const LIVE_ROLES_OCT_2026: Job[] = [
     featured: true,
     summary:
       "Take Primavera payroll live in Portugal. Not the person who runs the system — the person who put it there.",
-    impact: "A hands-on implementation from design to go-live.",
+    impact: "A hands-on implementation from design to go-live. Six months minimum.",
     techStack: ["Primavera"],
     tags: ["Portugal", "Implementation", "Primavera"],
   },
@@ -129,13 +195,13 @@ export const LIVE_ROLES_OCT_2026: Job[] = [
   },
   {
     slug: "swiss-payroll-sme-swisssalary-switzerland",
-    title: "Swiss Payroll SME — SwissSalary",
+    title: "Payroll Implementation Consultant — SwissSalary",
     company: "Confidential — Global Employment Platform",
     companyContext:
       "A global employment platform implementing Swiss payroll on SwissSalary.",
     location: "Switzerland",
     remote: "Remote",
-    salary: "CHF 450 – 500/day",
+    salary: "CHF 750/day",
     function: "Payroll",
     contract: "Contract",
     experience: "Senior",
@@ -144,7 +210,7 @@ export const LIVE_ROLES_OCT_2026: Job[] = [
     featured: true,
     summary:
       "Swiss payroll across the cantons — AHV, BVG, withholding tax — with SwissSalary implementation experience.",
-    impact: "A specialist mandate few people in the market can fill.",
+    impact: "A specialist mandate few people in the market can fill. Six months minimum.",
     techStack: ["SwissSalary"],
     tags: ["Switzerland", "SwissSalary", "Implementation"],
   },
