@@ -13,7 +13,6 @@ export function CtaFinal() {
   return (
     <section id="contact" className="py-32 md:py-40 hero-glow border-t border-ot-steel/40">
       <div className="max-w-content mx-auto px-6 md:px-12 lg:px-20 text-center">
-        <div className="meander mb-12 max-w-xl mx-auto opacity-60" />
         <span className="eyebrow text-ot-violet mb-6 block">The Next Move</span>
         <h2 className="font-sans font-black tracking-[-0.03em] leading-[.98] max-w-4xl mx-auto text-[clamp(2.5rem,6vw,5rem)]">
           Stop hiring reactively.
