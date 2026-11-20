@@ -46,7 +46,6 @@ export function HeroCultureFirst() {
         </p>
 
         {/* Meander divider */}
-        <div className="meander mt-16 max-w-2xl mx-auto opacity-70" />
       </div>
     </section>
   );
