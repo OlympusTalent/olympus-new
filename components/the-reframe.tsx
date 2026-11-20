@@ -17,7 +17,6 @@ export function TheReframe() {
           — embedded, data-driven, and running 24/7 across every function and
           every geography.
         </p>
-        <div className="meander mt-16 max-w-xl mx-auto opacity-60" />
       </div>
     </section>
   );
