@@ -21,7 +21,7 @@ export const LIVE_ROLES_OCT_2026: Job[] = [
     summary:
       "Run Mexican payroll through a live migration. IMSS, INFONAVIT, ISR, CFDI — every pay run right while the system moves underneath it.",
     impact:
-      "Several operators needed. Three to six month contract. Immediate start. Spanish essential, English a plus. Central Time.",
+      "Several operators needed. Three months minimum, up to six. Immediate start. Spanish essential, English a plus. Central Time.",
     tags: ["Mexico", "Payroll Operations", "Migration", "Spanish"],
   },
   {
