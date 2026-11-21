@@ -11,6 +11,7 @@ const ROUTES = [
   "/pricing",
   "/doctrine",
   "/payroll",
+  "/global-payroll-executive-search",
   "/hr",
   "/it-engineering",
   "/finance",

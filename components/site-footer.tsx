@@ -84,6 +84,11 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li>
+                <Link href="/global-payroll-executive-search" className="hover:text-ot-bone transition-colors">
+                  Payroll Executive Search
+                </Link>
+              </li>
+              <li>
                 <Link href="/hr" className="hover:text-ot-bone transition-colors">
                   HR Leadership
                 </Link>

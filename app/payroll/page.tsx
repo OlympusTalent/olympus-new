@@ -27,6 +27,12 @@ export default function PayrollPage() {
             <p className="text-xl text-ot-ash mb-12 max-w-2xl mx-auto">
               Whether you're managing payroll across 20 countries, migrating legacy systems, or building compliance-first operations, we place the architects who engineer payroll excellence.
             </p>
+            <p className="text-ot-bone mb-10">
+              Hiring a Head of Global Payroll, Director or VP?{' '}
+              <Link href="/global-payroll-executive-search" className="text-ot-cyan underline underline-offset-4">
+                Global Payroll Executive Search
+              </Link>
+            </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/book/advisory" className="btn-primary">
                 Start a Hiring Conversation
